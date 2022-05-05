@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+/*window.addEventListener("load", function() {
 
     const like_button = document.querySelector('#like_btn');
     const track_name = document.querySelector('.t-name').textContent;
@@ -14,4 +14,4 @@ window.addEventListener("load", function() {
         }
     })
 
-})
+})*/

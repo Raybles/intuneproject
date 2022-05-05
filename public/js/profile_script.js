@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
             let user_text = document.querySelector('#profile_user');
             let user_email = document.querySelector('#profile_email');
             user_text.innerHTML = `${response.user}`;
-            user_email.innerHTML = `${response.email} <a href="/update_email"><i class="fa-solid fa-pen"></i></a>`;
+            user_email.innerHTML = `${response.email} <a href="/intune/update_email"><i class="fa-solid fa-pen"></i></a>`;
         } else {
             console.log("something went wrong");
         }
