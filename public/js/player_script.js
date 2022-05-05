@@ -47,8 +47,8 @@ xhr.onload = function() {
             name: trackname,
             artist: artistname,
             album: albumname,
-            image: `../uploads/art/${artwork}`,
-            path: `../uploads/tracks/${trackreference}`
+            image: `/intune/public/uploads/art/${artwork}`,
+            path: `/uploads/tracks/${trackreference}`
         }
 
         track_list.push(item);        

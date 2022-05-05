@@ -10,6 +10,9 @@ const bcrypt = require('bcrypt');
 const port = 3000;
 const oneDay = 1000 * 60 * 60 * 24;
 
+let artfile;
+let trackfile;
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         if(file.fieldname === "album_artwork") {
@@ -21,7 +24,8 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, cb) => {
         const { originalname } = file;
-        cb(null, `${uuid()}-${originalname}`);
+        artfile = `${uuid()}-${originalname}`;
+        cb(null, artfile);
     }
 });
 const upload = multer({ storage });
