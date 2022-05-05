@@ -44,7 +44,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static('/public'));
 
 app.use(cookieParser());
 
@@ -550,7 +550,7 @@ app.get('/intune/update_password', async (req, res) => {
 
 app.get('/intune/logout',(req,res) => {
     req.session.destroy();
-    res.redirect('/intune');
+    res.redirect('https://trh22.brighton.domains/intune');
 });
 
 // POST Handlers
