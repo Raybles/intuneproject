@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Intune | Listen & Rate</title>
+        <meta name="description" content="testing for now">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/player.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/32ab55e3e1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="head_container">
+            <div class="site_title">
+                <h1>intune</h1>
+            </div>
+            <div class="link_box">
+                <i id="menu_icon" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <ul id="nav">
+            <a href="/intune/rate"><li class="nav_link">Rate Songs</li></a>
+            <a href="/intune/chart"><li class="nav_link">View Charts</li></a>
+            <a href="/intune/upload"><li class="nav_link">Upload a Song</li></a>
+            <a href="/intune/profile"><li class="nav_link">My Profile</li></a>
+            <a href="/intune/logout"><li class="nav_link">Logout</li></a>
+        </ul>
+
+        <section class="player_container">
+            <div class="player">
+  
+                <!-- Define the section for displaying details -->
+                <div class="details">
+                  <div class="t-art"></div>
+                  <div class="t-name">Track Name</div>
+                  <div class="t-artist">Track Artist</div>
+                  <div class="t-album">Track Album</div>
+                </div>
+              
+                <!-- Define the section for displaying track buttons -->
+                <div class="buttons">
+                  <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                  </div>
+                  <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-4x"></i>
+                  </div>
+                  <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                  </div>
+                </div>
+              
+                <!-- Define the section for displaying the seek slider-->
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">00:00</div>
+                </div>
+              
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100"
+                    value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+              </div>
+
+              <button id="like_btn" class="small_btn">Like</button>
+              <a href="/intune"><button class="btn">Back</button></a>
+            
+
+        </section>
+        
+        <div class="footer">
+            <p>&copy; intune 2022</p>
+        </div>
+
+        <script src="js/nav.js"></script>
+        <script src="js/player_script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+App 23350 output: Running at http://localhost:3000
+App 26131 output: Running at http://localhost:3000
+App 8640 output: Running at http://localhost:3000
+App 10588 output: Running at http://localhost:3000
+App 12873 output: Running at http://localhost:3000
+App 20788 output: Running at http://localhost:3000
+App 23521 output: Running at http://localhost:3000
+App 26418 output: Running on port 3000
+App 26418 output: /home/trh22/nodeapps/intune
+App 26418 output: /home/trh22/nodeapps/intune/server.js:624
+App 26418 output:     console.log(__dirname);wwwwwwwwwwwwwwwwwwww
+App 26418 output:                            ^
+App 26418 output: ReferenceError: wwwwwwwwwwwwwwwwwwww is not defined
+App 26418 output:     at Server.app.listen (/home/trh22/nodeapps/intune/server.js:624:28)
+App 26418 output:     at Object.onceWrapper (events.js:286:20)
+App 26418 output:     at Server.emit (events.js:198:13)
+App 26418 output:     at doneListening (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:310:9)
+App 26418 output:     at Server.<anonymous> (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:301:3)
+App 26418 output:     at Object.onceWrapper (events.js:286:20)
+App 26418 output:     at Server.emit (events.js:198:13)
+App 26418 output:     at emitListeningNT (net.js:1314:10)
+App 26418 output:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 26418 output:     at Function.Module.runMain (internal/modules/cjs/loader.js:834:11)
+App 26594 output: Running on port 3000
+App 26594 output: /home/trh22/nodeapps/intune
+App 26594 output: /home/trh22/nodeapps/intune/server.js:624
+App 26594 output:     console.log(__dirname);wwwwwwwwwwwwwwwwwwww
+App 26594 output:                            ^
+App 26594 output: ReferenceError: wwwwwwwwwwwwwwwwwwww is not defined
+App 26594 output:     at Server.app.listen (/home/trh22/nodeapps/intune/server.js:624:28)
+App 26594 output:     at Object.onceWrapper (events.js:286:20)
+App 26594 output:     at Server.emit (events.js:198:13)
+App 26594 output:     at doneListening (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:310:9)
+App 26594 output:     at Server.<anonymous> (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:301:3)
+App 26594 output:     at Object.onceWrapper (events.js:286:20)
+App 26594 output:     at Server.emit (events.js:198:13)
+App 26594 output:     at emitListeningNT (net.js:1314:10)
+App 26594 output:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 26594 output:     at Function.Module.runMain (internal/modules/cjs/loader.js:834:11)
+App 28355 output: Running on port 3000
+App 28355 output: /home/trh22/nodeapps/intune
+App 31118 output: Running on port 3000
+App 31118 output: /home/trh22/nodeapps/intune
+App 32277 output: Running on port 3000
+App 32277 output: /home/trh22/nodeapps/intune
+App 4486 output: Running on port 3000
+App 4486 output: /home/trh22/nodeapps/intune
+App 7679 output: Running on port 3000
+App 7679 output: /home/trh22/nodeapps/intune
+App 11807 output: Running on port 3000
+App 11807 output: /home/trh22/nodeapps/intune

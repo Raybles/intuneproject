@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Intune | Login</title>
+        <meta name="description" content="testing for now">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/32ab55e3e1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="head_container">
+            <div class="site_title">
+                <h1>intune</h1>
+            </div>
+            <div class="link_box">
+                <i id="menu_icon" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <ul id="nav">
+            <a href="/intune/rate"><li class="nav_link">Rate Songs</li></a>
+            <a href="/intune/chart"><li class="nav_link">View Charts</li></a>
+            <a href="/intune/upload"><li class="nav_link">Upload a Song</li></a>
+            <a href="/intune/profile"><li class="nav_link">My Profile</li></a>
+            <a href="/intune/logout"><li class="nav_link">Logout</li></a>
+        </ul>
+
+        <section class="box">
+            <div class="form">
+                <h2 class="header_text">Update Email Address</h2>
+                <form id="update_form" action="/intune/update_email" method="POST">
+                    <input type="text" id="username_input" name="username" class="input_field" placeholder="Username" />
+                    <input type="password" id="password_input" name="password" class="input_field" placeholder="Password" />
+                    <input type="email" name="email" id="email_input" class="input_field" placeholder="New Email address" required/>
+                    <input type="submit" class="btn" value="Update" />
+                </form>
+            </div>
+            <a href="/intune/profile"><button class="btn">Back</button></a>
+            <p id="login_error" class="error_text">Incorrect username or password</p>
+            <p id="email_error" class="error_text">Email address already in use</p>
+            <p id="success_prompt" class="error_text">Email successfully updated!</p>
+        </section>
+        
+        <div class="footer">
+            <p>&copy; intune 2022</p>
+        </div>
+        
+        <script src="js/nav.js"></script>
+        <script src="js/update_email.js"></script>
+    </body>
+</html>

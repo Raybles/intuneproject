@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 55, 81);
+}
+
+.container > h2 {
+    margin: 0;
+    text-shadow: 4px 4px rgb(43, 4, 9);
+}
+
+.head_container {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: table;
+    background-color: rgb(255, 27, 57);
+    color: rgb(255, 220, 225)
+}
+
+.site_title {
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+}
+
+.site_title > h1 {
+    text-align: center;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 15px;
+    font-size: 1.5em;
+    text-shadow: 4px 4px rgb(43, 4, 9);
+}
+
+.link_box {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+#nav {
+    display: none;
+    table-layout: fixed;
+    width: 100%;
+    border-bottom: 4px solid rgb(255, 27, 57);
+}
+
+#track_list {
+    font-size: 0.75em;
+    background-color: rgb(255, 169, 179);
+    width: 85%;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.track {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: rgb(255, 55, 81);
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.t_list_name {
+    display: inline-block;
+    width: 49%;
+}
+
+.t_list_artist {
+    display: inline-block;
+    width: 49%;
+}
+
+.nav_link {
+    display: block;
+    width: 100%;
+    height: 38px;
+    background-color: rgb(255, 95, 108);
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 12px;
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+.nav_link:hover {
+    background-color: rgb(255, 55, 81);
+    font-weight: bold;
+}
+
+.current {
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+}
+
+.box {
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 100%;
+}
+
+.container {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+.profile_section {
+    border: 6px solid rgb(255, 220, 225);
+    border-radius: 15px;
+    background-color: rgb(255, 87, 101);
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.profile_text {
+    font-size: 1em;
+    text-shadow: 3px 3px rgb(43, 4, 9);
+    margin-bottom: 5px;
+}
+
+.update {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+.form {
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.form > h2 {
+    color: white;
+}
+
+.input_field {
+    text-align: center;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+form > .btn {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: rgb(255, 95, 108);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+.btn:hover {
+    background-color: rgb(255, 27, 57);
+}
+
+.big_button {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: 25px;
+    border: 4px solid rgb(255, 227, 240);
+    border-radius: 10px;
+    background-color: rgb(255, 169, 179);
+    font-size: 1.25em;
+    font-weight: bold;
+    color:white;
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+.big_button:hover {
+    background-color: rgb(255, 27, 57);
+    border-bottom: 3px solid rgb(255, 169, 179);
+    border-right: 3px solid rgb(255, 169, 179);
+}
+
+.profile_item {
+    display: table;
+    width: 80%;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    border: 3px solid rgb(255, 220, 225);
+    border-radius: 10px;
+}
+
+.p_i_left {
+    display: table-cell;
+    width: 30%;
+    background-color: rgb(245, 182, 192);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.p_i_right {
+    display: table-cell;
+    width: 70%;
+    background-color: rgb(255, 55, 81);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Chart Style */
+#chart_canvas {
+    width: 100%;
+    margin-top: 10px;
+    height: 75vh;
+    display: table;
+    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.chart_item {
+    height: 10%;
+}
+
+.ranking, .song_name, .chart_artist {
+    padding: 0;
+    display: table-cell;
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.ranking {
+    width: 10%;
+    vertical-align: middle;
+    background-color: rgb(255, 169, 179);
+}
+
+.song_name {
+    width: 44%;
+    background-color: rgb(255, 95, 108);
+}
+
+.chart_artist {
+    width: 40%;
+    background-color: rgb(255, 169, 179);
+}
+
+.error_text {
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+#menu_icon {
+    font-size: 1.25em;
+}
+
+#exist_error {
+    display: none;
+}
+
+#symbols_error {
+    color: white;
+    display: none;
+}
+
+#password_error {
+    display: none;
+}
+
+#conf_error {
+    display: none;
+}
+
+#success_prompt {
+    display: none;
+}
+
+#login_error {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 220, 225)
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(255, 220, 225)
+}
+
+#email_error, #username_error {
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    color: rgb(255, 227, 240);
+}
+
+#artwork_input, #track_file {
+    color: rgb(255, 227, 240);
+    display: inline-block;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.small_btn {
+    display: inline-block;
+    width: 80%;
+    height: 45px;
+    background-color: rgb(255, 27, 57);
+    border: 3px solid rgb(207, 21, 45);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.small_btn:hover {
+    background-color: rgb(255, 95, 108);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(255, 27, 57);
+    color: rgb(211, 211, 211);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header_text {
+    text-shadow: 2px 2px rgb(43, 4, 9);
+}
+
+@media only screen and (min-width: 1120px) {
+
+    .container {
+        width: 50%;
+    }
+
+    .site_title {
+        width: 90%;
+    }
+
+    .link_box {
+        width: 10%;
+    }
+
+    .box {
+        width: 50%;
+    }
+  }
