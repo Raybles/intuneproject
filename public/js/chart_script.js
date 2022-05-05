@@ -29,7 +29,7 @@ window.addEventListener("load", function() {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', '/chart_list', false);
+    xhr.open('GET', 'intune/chart_list', false);
     xhr.onload = function() {
         console.log(xhr.status);
         let response = JSON.parse(xhr.response);

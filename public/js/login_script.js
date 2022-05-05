@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
     const password_input = document.querySelector('#password_input');
     const form = document.querySelector('#login_form');
     const login_error = document.querySelector('#login_error');
-    const url = "/login";
+    const url = "/intune/login";
 
     const title = document.querySelector(".site_title");
 
@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
                 if (xhr.status == 400) {
                     login_error.style.display = "block";
                 } else {
-                    window.location.href = "http://localhost:3000/";
+                    window.location.href = "https://trh22.brighton.domains/intune";
                 }
             }
     

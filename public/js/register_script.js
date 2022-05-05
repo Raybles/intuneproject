@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
                 password_conf: password_conf
             });
 
-            const url = "/register";
+            const url = "intune/register";
             let xhr = new XMLHttpRequest();
 
             xhr.open("POST", url, true);
@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
             xhr.addEventListener("load", function () {
                 console.log(xhr.status);
                 if (xhr.status == 201) {
-                    window.location.href = '/';
+                    window.location.href = '/intune';
                 } else {
                     console.log('Something went wrong');
                 }
