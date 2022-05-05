@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
     like_button.addEventListener("click", function(evt) {
         evt.preventDefault();
         xhr_get = new XMLHttpRequest();
-        xhr_get.open('GET', '/song_list', false);
+        xhr_get.open('GET', '/intune/song_list', false);
         xhr_get.onload = function() {
             let response = xhr_get.response;
             console.log(response);

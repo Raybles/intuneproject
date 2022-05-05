@@ -29,7 +29,7 @@ window.addEventListener("load", function() {
             console.log(data);
 
             let xhr = new XMLHttpRequest();
-            xhr.open("POST", "/update_email", false);
+            xhr.open("POST", "/intune/update_email", false);
             xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
             xhr.onload = function() {
                 console.log(xhr.status);

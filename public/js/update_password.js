@@ -41,7 +41,7 @@ window.addEventListener("load", function() {
 
             if (data) {
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST", "/update_password", false);
+                xhr.open("POST", "/intune/update_password", false);
                 xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
                 xhr.onload = function() {
                     console.log(xhr.response);

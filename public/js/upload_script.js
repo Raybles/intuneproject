@@ -26,7 +26,7 @@ window.addEventListener("load", function(){
         // console.log(...formData);
         
         let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/upload', false);
+        xhr.open('POST', '/intune/upload', false);
 
         xhr.onload = function() {
             if (xhr.status == 200) {

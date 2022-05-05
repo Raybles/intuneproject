@@ -31,7 +31,7 @@ function randomiser(max) {
 
 // GET songs from database
 let xhr = new XMLHttpRequest();
-xhr.open('GET', '/song_list', false);
+xhr.open('GET', '/intune/song_list', false);
 xhr.onload = function() {
     let response = JSON.parse(xhr.response);
     let count = Object.keys(response.tracks).length;
@@ -204,7 +204,7 @@ like_button.addEventListener("click", function(evt) {
     });
 
     xhrtest = new XMLHttpRequest();
-    xhrtest.open('POST', '/track_likes', false);
+    xhrtest.open('POST', '/intune/track_likes', false);
     xhrtest.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
     xhrtest.onload = function() {
         console.log(xhrtest.status);

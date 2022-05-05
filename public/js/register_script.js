@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
                 password_conf: password_conf
             });
 
-            const url = "intune/register";
+            const url = "/intune/register";
             let xhr = new XMLHttpRequest();
 
             xhr.open("POST", url, true);
