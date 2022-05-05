@@ -546,7 +546,7 @@ app.get('/intune/update_password', async (req, res) => {
 
 app.get('/intune/logout',(req,res) => {
     req.session.destroy();
-    res.redirect('/');
+    res.redirect('/intune');
 });
 
 // POST Handlers
